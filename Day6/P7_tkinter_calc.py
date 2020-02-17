@@ -35,12 +35,9 @@ message_label = Label(root,text='Enter Salary',font=('Arial', 14))
 output_label = Label(root,text='', font=('Arial', 14))
 sal_entry = Entry(root, font=('Arial', 14), width=6)
 
-calc_button = Button(root,text='Calculate HRA', font=('Arial', 14),
-                     bg='Orange', fg='Black',command=calculate)
-reset_button = Button(root,text='Clear', font=('Arial', 14), bg='Khaki',
-                            fg='Black', command=reset)
-exit_button = Button(root,text='Exit', font=('Arial', 14),
-                     bg='Yellow', fg='Black', command=root.destroy)
+calc_button = Button(root,text='Calculate HRA', font=('Arial', 14), bg='Orange', fg='Black',command=calculate)
+reset_button = Button(root,text='Clear', font=('Arial', 14), bg='Khaki', fg='Black', command=reset)
+exit_button = Button(root,text='Exit', font=('Arial', 14), bg='Yellow', fg='Black', command=root.destroy)
 
 # Placing widgets using grid manager
 message_label.grid(row=0, column=0)

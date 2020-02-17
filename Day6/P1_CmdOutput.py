@@ -1,4 +1,4 @@
-from tkinter import*
+from tkinter import *
 class MyButton:
     def __init__(self,root):
         self.f=Frame(root,height=200,width=300)
