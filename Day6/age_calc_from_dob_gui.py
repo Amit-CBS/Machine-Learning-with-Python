@@ -8,22 +8,18 @@ from datetime import datetime, date
 
 class GetAge:
       # Constructor
-      def __init__(self, root):
-          self.f = Frame(root, height=350, width=500)
-          self.f.pack()    # Place the frame on root window
-                  
+      def __init__(self, root1):
+          self.f = Frame(root1, height=350, width=500)
+          self.f.pack()    # Place the frame on root1 window
           # Creating label and Entry widgets
           self.message_label = Label(self.f,text='Enter your DOB (dd/mm/yyyy) :',font=('Arial', 14))
           self.output_label = Label(self.f,text='', font=('Arial', 14))
           self.age = Entry(self.f, font=('Arial', 14), width=12)
           self.age.bind('<Return>', self.calc_age) # Hit Enter key to call 'calculate' func
           # Creating button widgets
-          self.calc_button = Button(self.f,text='Get Age', font=('Arial', 14), bg='Orange',
-                                 fg='Black', command=self.calc_age)
-          self.reset_button = Button(self.f,text='Clear', font=('Arial', 14), bg='Brown',
-                                 fg='Black', command=self.reset)
-          self.exit_button = Button(self.f,text='Exit', font=('Arial', 14), bg='Yellow',
-                                 fg='Black', command=root.destroy)
+          self.calc_button = Button(self.f,text='Get Age', font=('Arial', 14), bg='Orange', fg='Black', command=self.calc_age)
+          self.reset_button = Button(self.f,text='Clear', font=('Arial', 14), bg='Brown', fg='Black', command=self.reset)
+          self.exit_button = Button(self.f,text='Exit', font=('Arial', 14), bg='Yellow', fg='Black', command=root1.destroy)
 
           # Placing the widgets using grid manager
           self.message_label.grid(row=0, column=0)
@@ -65,9 +61,9 @@ class GetAge:
           self.age.focus()                         # Focus the cursor on age field
            
 #----------------------------------------  
-root = Tk()
-root.title('Age Calculation from Date Of Birth')
-root.geometry('600x400')
-temp_conv = GetAge(root)
+root1 = Tk()
+root1.title('Age Calculation from Date Of Birth')
+root1.geometry('600x400')
+temp_conv = GetAge(root1)
 # mainloop
-root.mainloop()
+root1.mainloop()
