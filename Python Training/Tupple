@@ -1,0 +1,32 @@
+String and Tuple properties: set, list
+1. Index ability: 
+	s="Hello"
+	then s[0]='H'
+	For tuples-> yes
+	
+
+2. Slice ability:
+	String can be sliced
+	Tuples can be sliced
+	
+
+3. Mutability:
+	Strings are immutable
+	Tuples are immutable
+	
+	
+
+4. Iterate ability:
+	String is iterable
+	Tuple is iterable
+	Set is iterable for keys
+	Set.items iterate all gives tuples
+
+5. Homogeneous/heterogeneous:
+	String is Homogeneous.
+	Tuple is heterogeneous.
+	List is heterogeneous
+
+Variable are references, objects
+Positional arguments, default arguments, labelling. Positional arguments, default arguments, star arguments then keyword arguments
+Return by default None, NoneType

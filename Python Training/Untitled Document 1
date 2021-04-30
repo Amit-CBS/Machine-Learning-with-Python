@@ -1,0 +1,10 @@
+apt-get install --fix-missing
+ps aux | grep -i apt
+sudo killall apt apt-get
+sudo killall apt apt
+sudo killall apt
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+ sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+

@@ -1,0 +1,4 @@
+python manage.py migrate
+after models.py changes
+
+
